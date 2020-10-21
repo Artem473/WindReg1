@@ -80,7 +80,7 @@
                      </HBox.margin>
                   </Label>
                </children></HBox>
-            <HBox layoutX="150.0" layoutY="170.0" prefHeight="50.0" prefWidth="450.0">
+            <HBox layoutX="150.0" layoutY="142.0" prefHeight="50.0" prefWidth="450.0">
                <children>
                   <Label text="3. Введите название файла:" wrapText="true">
                      <font>
@@ -99,11 +99,11 @@
                      </HBox.margin>
                   </Label>
                </children></HBox>
-            <HBox alignment="CENTER" layoutX="150.0" layoutY="220.0" prefHeight="50.0" prefWidth="190.0">
+            <HBox alignment="CENTER" layoutX="150.0" layoutY="200.0" prefHeight="50.0" prefWidth="190.0">
                <children>
-                  <TextField id="text" fx:id="text" prefHeight="25.0" prefWidth="161.0" />
+                  <TextField fx:id="nameFile" prefHeight="25.0" prefWidth="161.0" />
                </children></HBox>
-            <HBox alignment="CENTER_LEFT" layoutX="150.0" layoutY="75.0" prefHeight="100.0" prefWidth="450.0">
+            <HBox alignment="CENTER_LEFT" layoutX="150.0" layoutY="75.0" prefHeight="67.0" prefWidth="450.0">
                <children>
                   <RadioButton mnemonicParsing="false" onAction="#pressRadio" text=".txt">
                      <HBox.margin>
@@ -130,9 +130,9 @@
                      </font>
                   </RadioButton>
                </children></HBox>
-            <HBox alignment="CENTER" layoutX="340.0" layoutY="220.0" prefHeight="50.0" prefWidth="260.0">
+            <HBox alignment="CENTER" layoutX="340.0" layoutY="200.0" prefHeight="50.0" prefWidth="260.0">
                <children>
-                  <TextField id="text" fx:id="text" prefHeight="25.0" prefWidth="247.0" />
+                  <TextField id="text" fx:id="pathFile" prefHeight="25.0" prefWidth="247.0" />
                </children></HBox>
             <Pane layoutX="150.0" layoutY="270.0" prefHeight="230.0" prefWidth="450.0">
                <children>
@@ -151,16 +151,18 @@
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <TextField id="text" fx:id="text" layoutX="88.0" layoutY="15.0" prefHeight="25.0" prefWidth="250.0" />
-                  <TextField id="text" fx:id="text" layoutX="88.0" layoutY="66.0" prefWidth="250.0" />
-                  <TextField id="text" fx:id="text" layoutX="88.0" layoutY="116.0" prefWidth="250.0" />
-                  <Button layoutX="323.0" layoutY="191.0" mnemonicParsing="false" onAction="#pressButton" text="Оформить заявку" />
-                  <Label id="label" fx:id="label" alignment="TOP_LEFT" layoutX="12.0" layoutY="166.0" prefHeight="50.0" prefWidth="297.0" text="Статус:" wrapText="true">
+                  <TextField id="text" fx:id="surname" layoutX="88.0" layoutY="15.0" prefHeight="25.0" prefWidth="250.0" />
+                  <TextField id="text" fx:id="name" layoutX="88.0" layoutY="66.0" prefWidth="250.0" />
+                  <TextField id="text" fx:id="patron" layoutX="88.0" layoutY="116.0" prefWidth="250.0" />
+                  <Button layoutX="323.0" layoutY="149.0" mnemonicParsing="false" onAction="#pressButton" text="Оформить заявку" />
+                  <Label fx:id="status" alignment="TOP_LEFT" layoutX="12.0" layoutY="149.0" prefHeight="67.0" prefWidth="304.0" text="Статус:" wrapText="true">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font></Label>
+                  <Button layoutX="332.0" layoutY="183.0" mnemonicParsing="false" onAction="#selectFile" prefHeight="25.0" prefWidth="99.0" text="Открыть файл" />
                </children>
             </Pane>
+            <Button layoutX="518.0" layoutY="250.0" mnemonicParsing="false" onAction="#selectPath" text="Обзор..." />
          </children>
       </Pane>
    </children>
